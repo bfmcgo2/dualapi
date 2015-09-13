@@ -1,0 +1,30 @@
+@import "_variables";
+@import "_utils";
+@import "_ribbons";
+@import "_button";
+
+body {
+
+
+	.video-preview{
+		position:absolute;
+		top:0;
+		transition:1s;
+	}
+
+	#map{
+		position:absolute;
+		bottom:0;
+		height:90%;
+		width:100%;		
+		z-index: -1;
+	}
+
+	
+	
+}
+
+
+
+	
+

@@ -1,0 +1,16 @@
+
+/* primary CTA button */
+@mixin cta($color: #000000, $bgColor: #05B8CC) {
+	display: block;
+	position: relative;
+	z-index: 0;
+	
+	display: inline-block;
+	color: $color;
+	background-color: $bgColor;
+	position: relative;
+	text-align: center;
+	padding: 11px 5px;
+	font-size: 18px;
+	line-height: 18px;
+}
