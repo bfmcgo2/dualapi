@@ -42,18 +42,19 @@ $(document).ready(function(){
 				// createVideo.setAttribute("zIndex","1");
 				// document.querySelector("body").appendChild(createVideo);
 	   		// };
-	   		var instagramLocationAPIURL = "https://api.instagram.com/v1/locations/search?lat="+latitude+"&lng="+longitude+"&access_token=21789	   		78543.76c0077.c6b582cd7f444dd3b439414c5a9c8949&callback=?";
+
+	   		var instagramLocationAPIURL = "https://api.instagram.com/v1/locations/search?lat="+latitude+"&lng="+longitude+"&access_token=2178978543.76c0077.c6b582cd7f444dd3b439414c5a9c8949&callback=?";
 
 	   		$.getJSON(instagramLocationAPIURL).done(function( response ){ 
 
 	   			console.log(response);
 	   			for (var i = 0; i < response.data.length; i++) {
 	   				console.log(response.data[0].id)
-
 	   			}
 
 	   		});
 	   		
+
 	    	// var feed = new Instafeed({
     		//     clientId: '76c007752c09429d9664110441bb0900',
     		//     get: 'location',
@@ -61,11 +62,15 @@ $(document).ready(function(){
     		//     limit: 10
     		// });
     		// feed.run();
+
 	    	
 	    })
 	}
 
+
 	addMarkerToMap("#fa0", 40.487, -106.831, "72168339");
+	addMarkerToMap("#fa0", 40.18044715758667, -106.85165405273438, "72168339");
+
 	//addMarkerToMap("#fa0", 37.82958198283902, -83.55960845947266, "23869720");
 	//addMarkerToMap("#fa0", 37.312836976839144, -113.01464080810547, "12463658");
 	//addMarkerToMap("#fa0", 33.803863538792875, -84.14525270462036, "104898610");
@@ -77,6 +82,7 @@ $(document).ready(function(){
 	//addMarkerToMap("#05B8CC", 40.26996488643512, -105.58685302734375, "92559369");
 	//addMarkerToMap("#05B8CC", 35.96689214303232, -111.95343017578125, "75112600");
 	//addMarkerToMap("#05B8CC", 31.04433054150274, -98.48221778869629, "14903221");
+
 
 
 
